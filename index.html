@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Sorting Visualizer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="style11.css" rel="stylesheet" />
+</head>
+<body>
+  <section class="head">Sorting Visualizer</section>
+  <section class="data-container"></section>
+
+  <div class="button-container">
+    <button class="btn1" onclick="generate()" id="Button1">Generate New Array</button>
+    <button class="btn2" onclick="startSort('selection')" id="Button2">Apply Selection Sort</button>
+    <button class="btn2" onclick="startSort('bubble')" id="Button3">Apply Bubble Sort</button>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p><strong>Selection Sort:</strong> Selection Sort is a simple comparison-based sorting algorithm. It divides the input list into two parts: a sorted and an unsorted region. The algorithm repeatedly selects the smallest (or largest, depending on the order) element from the unsorted region and swaps it with the first element of the unsorted region. This process is repeated until the entire list is sorted.</p>
+      <p><strong>Key Features:</strong>
+      <ul>
+        <li>Simplicity: Selection Sort is straightforward and easy to understand.</li>
+        <li>In-Place Sorting: It sorts the elements within the original array without requiring additional memory space.</li>
+        <li>Quadratic Time Complexity: Selection Sort has a time complexity of O(n^2), making it less efficient for large datasets.</li>
+      </ul>
+      </p>
+      <p><strong>How it Works:</strong>
+      <ol>
+        <li>Find the minimum element in the unsorted region.</li>
+        <li>Swap it with the first element of the unsorted region.</li>
+        <li>Expand the sorted region to include the newly sorted element.</li>
+        <li>Repeat these steps until the entire list is sorted.</li>
+      </ol>
+      </p>
+      <p><strong>Use Case:</strong> Selection Sort is suitable for small datasets or situations where the simplicity of the algorithm is more valuable than its efficiency. However, for larger datasets, more efficient algorithms like QuickSort or MergeSort are preferred.</p>
+
+      <p><strong>Bubble Sort:</strong> Bubble Sort is a simple comparison-based sorting algorithm. It repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. This process continues until the list is sorted.</p>
+      <p><strong>Key Features:</strong>
+      <ul>
+        <li>Simplicity: Bubble Sort is easy to understand and implement.</li>
+        <li>In-Place Sorting: It sorts the elements within the original array without requiring additional memory space.</li>
+        <li>Quadratic Time Complexity: Bubble Sort has a time complexity of O(n^2), making it less efficient for large datasets.</li>
+      </ul>
+      </p>
+      <p><strong>How it Works:</strong>
+      <ol>
+        <li>Compare adjacent elements in the list.</li>
+        <li>Swap them if they are in the wrong order.</li>
+        <li>Repeat steps 1 and 2 for all elements until the list is sorted.</li>
+      </ol>
+      </p>
+      <p><strong>Use Case:</strong> Bubble Sort is suitable for small datasets or situations where the simplicity of the algorithm is more valuable than its efficiency. However, for larger datasets, more efficient algorithms like QuickSort or MergeSort are preferred.</p>
+    </div>
+  </footer>
+
+  <script src="Selection.js"></script>
+</body>
+</html>

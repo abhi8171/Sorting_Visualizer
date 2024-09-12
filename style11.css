@@ -1,0 +1,138 @@
+body {
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .head {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 32px;
+    background-color: #6200ea;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .data-container {
+    width: 90%;
+    max-width: 600px;
+    height: 400px;
+    position: relative;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;  
+    align-items: flex-end;
+    padding: 10px;
+    overflow-x: none; 
+    overflow-y: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bar {
+    flex: 0 0 auto;
+    height: 100%;
+    margin: 0 2px;  
+    background-color: #1e88e5;
+    border-radius: 4px 4px 0 0;
+    transition: height 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .bar__id {
+    color: white;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .btn1,
+  .btn2 {
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #6200ea;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn1:hover,
+  .btn2:hover {
+    background-color: #3700b3;
+    transform: translateY(-2px);
+  }
+  
+  footer {
+    background-color: #6200ea;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  .footer-content strong {
+    font-weight: bold;
+  }
+  
+  .footer-content p {
+    margin-bottom: 20px;
+  }
+  
+  .footer-content ul, .footer-content ol {
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .footer-content,
+    .button-container {
+      padding: 10px;
+    }
+  
+    .button-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .head {
+      font-size: 24px;
+    }
+  
+    .data-container {
+      width: 90%;
+      height: 300px;
+    }
+  
+    .btn1,
+    .btn2 {
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+  }
+  
